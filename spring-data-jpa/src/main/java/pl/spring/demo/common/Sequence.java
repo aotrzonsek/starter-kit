@@ -13,6 +13,6 @@ public class Sequence {
                 result = nextExistingId.getId();
             }
         }
-        return result;
+        return result + 1;
     }
 }
