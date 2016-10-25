@@ -1,0 +1,22 @@
+package pl.spring.demo.common;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import pl.spring.demo.dao.impl.BookDaoImpl;
+
+/**
+ * Test for #2
+ */
+public class SequenceTest {
+
+    @Test
+    public void test() {
+
+	    Sequence sequence = new Sequence();
+	    assertEquals(7, sequence.nextValue(new BookDaoImpl().findAll()));
+      
+    }
+
+}
